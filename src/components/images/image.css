@@ -1,0 +1,12 @@
+.gallery {
+  padding: 80px 80px 0 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.singleImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
