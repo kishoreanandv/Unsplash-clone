@@ -1,32 +1,30 @@
 .searchContainer {
   margin: 0;
-  background-image: url("https://images.unsplash.com/photo-1674653834059-1da760d2a3d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=100");
+  background-image: url(../../assets/background-image.jpg);
+  background-size: cover;
   height: 80vh;
   width: 100vw;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-form {
-  width: 100%;
-  /* border: 2px solid red; */
+.searchContainer-form {
+  width: 60%;
   display: flex;
   justify-content: center;
 }
 .inputField {
   padding: 1rem;
-  width: 60%;
+  width: 100%;
   border: none;
   outline: none;
   font-family: "poppins";
-  /* border-radius: 0.5rem; */
 }
 
-button {
+.searchContainer-btn {
   border: none;
   outline: none;
   padding: 1rem;
@@ -34,4 +32,40 @@ button {
   font-size: 0.9rem;
   color: #42464a;
   cursor: pointer;
+}
+
+.searchContainer-btn:hover {
+  background: black;
+  color: #fff;
+}
+
+@media all and (max-width: 600px) {
+  .searchContainer-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputField {
+    padding: 1rem;
+    width: 150%;
+    border: none;
+    outline: none;
+    font-family: "poppins";
+    border-radius: 0.5rem;
+  }
+
+  .searchContainer-btn {
+    width: 50%;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-family: "poppins";
+    font-size: 0.9rem;
+    color: #42464a;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./image.css";
 
-const Image = ({ photos }) => {
+const Image = ({ photos }:any) => {
   return (
     <div className="gallery">
-      {photos.map((photo) => (
+      {photos.map((photo:any) => (
         <img
           className="singleImage"
           key={photo.id}

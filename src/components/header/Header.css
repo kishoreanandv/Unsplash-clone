@@ -1,13 +1,12 @@
 header {
   background: #fff;
-  color: #42464a;
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid red; */
+  box-shadow: 2px 2px 10px lightgray;
 }
 
 .logo {
@@ -17,26 +16,35 @@ header {
   cursor: pointer;
 }
 
-.buttons {
-  /* border: 1px solid red; */
+.navbar {
   display: flex;
-  height: 100%;
+  height: auto;
   width: 80%;
   align-items: center;
   justify-content: space-around;
+  color: #42464a;
 }
 
-.buttons > button {
-  padding: 0.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+ul li {
+  padding: 1rem;
   color: #42464a;
   font-family: "poppins";
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.buttons > button:hover {
-  border: 1px solid #42464a;
-  border-radius: 0.5rem;
+a {
+  text-decoration: none;
+}
+
+ul li:hover {
+  background: #42464a;
+  color: #fff;
 }
